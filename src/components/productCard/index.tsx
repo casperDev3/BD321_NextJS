@@ -5,7 +5,7 @@ import s from "./index.module.scss";
 import { Product } from "@/interfaces";
 // redux
 import { useDispatch } from "react-redux";
-import { addItemToCart } from "@/store/features/cart";
+import { addItemToCart, removeItemFromCart } from "@/store/features/cart";
 
 interface Props {
   data: Product;
@@ -29,6 +29,14 @@ const Card = ({ data }: Props) => {
           className={s.card__btn}
         >
           Додати в корзину
+        </div>
+        <div
+          onClick={() => {
+            dispatch(removeItemFromCart(id));
+          }}
+          className={s.card__btn_del}
+        >
+          Видалити з корзини
         </div>
       </div>
     </>
