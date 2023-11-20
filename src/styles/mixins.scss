@@ -1,0 +1,9 @@
+@mixin btn_buy($width, $height, $color, $br, $color_text) {
+  width: $width;
+  height: $height;
+  background-color: $color !important;
+  border-radius: $br;
+  color: $color_text;
+  cursor: pointer;
+  display: inline;
+}

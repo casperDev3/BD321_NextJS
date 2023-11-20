@@ -25,6 +25,7 @@ export const cartSlice = createSlice({
       // cond
       if (isExist != -1) {
         state.items = state.items.filter((item) => item != productID);
+        localStorage.setItem("cart", JSON.stringify(state.items));
       } else {
         alert("Product doesn't exist in cart!");
       }

@@ -26,7 +26,8 @@ const Card = ({ data }: Props) => {
           onClick={() => {
             dispatch(addItemToCart(id));
           }}
-          className={s.card__btn}
+          // className={`${s.card__btn} ${s.btn}`}
+          className={[s.card__btn, s.btn].join(" ")}
         >
           Додати в корзину
         </div>
