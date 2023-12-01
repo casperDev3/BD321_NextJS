@@ -106,6 +106,25 @@ export default function Home() {
           return <Card num={number} data={e} key={e.id} />;
         })} */}
         {/* form */}
+        <div className="grid">
+          <div className="box1">B!</div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <form action="">
           <input
             value={user.name}
