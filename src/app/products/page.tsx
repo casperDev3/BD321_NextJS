@@ -1,12 +1,13 @@
-"use client";
-import { useEffect } from "react";
+import ProductsClient from "./page-client";
 
 const Products = () => {
-  // on load
-  useEffect(() => {
-    alert("test");
-  }, []);
-  return <div>Products</div>;
+  let test = "test";
+  console.log(test);
+  return (
+    <>
+      <ProductsClient data={test} />
+    </>
+  );
 };
 
 export default Products;
